@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beauty&salon</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans serif;
+        background: linear-gradient(#5e412f, #fcebb6) fixed;
+      }
+      .navbar {
+        width: 800px;
+        height: 40px;
+        margin: auto;
+      }
+      .content {
+        display: block;
+        margin: 0;
+        text-align: center;
+      }
+      span {
+        font-style: italic;
+        color: #8947df;
+      }
+      h2 {
+        margin: 20px;
+        padding: 5px;
+      }
+      img {
+        width: 40%;
+        padding: 5px 10px;
+        border-radius: 15px;
+      }
+      h1 {
+        padding: 0;
+      }
+      hr {
+        width: 30%;
+      }
+      button {
+        background: transparent;
+        width: 200px;
+        padding: 10px 0;
+        margin: 20px 10px;
+        border-radius: 25px;
+        border: 1px solid #8947df;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        box-shadow: 6px 4px 4px#5e412f;
+      }
+      button:hover {
+        background-color: rgb(248, 139, 157);
+      }
+      a {
+        text-decoration: none;
+      }
+      .content p {
+        line-height: 22px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="topbar">
+        <div class="top-icon">
+          <h2 class="logo"><span>PrC</span> Beauty & Salon Co.</h2>
+        </div>
+      </div>
+      <div class="content">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/117/180/original/istockphoto.jpg?1709311601"
+          class="srcimage"
+          alt="beautyimage"
+        />
+        <h1>
+          <em>Experience</em> the Best Beauty Services
+          <hr />
+        </h1>
+        <p>
+          We offer a full range of
+          <strong>beauty and hairdressing services</strong> for men and women,
+          eyebrow<br />
+          and eyelash care, the services of make-up artists and stylists.
+          Entrust your beauty to<br />
+          professionals who really care about your style and look!!<br />
+          For more information <a href="" target="_blank">👉🏼Click Here</a>
+        </p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    <script>
+      function bookNow() {
+        let firstName = prompt("what is your name?");
+        let location = prompt("do you wish home or office service?");
+
+        if (location === "home") {
+          alert("Hi, " + firstName + " our team will get back to You!😊");
+        } else {
+          alert(
+            "Hi, " +
+              firstName +
+              " click the link above👆🏼 for location to our offices!😊"
+          );
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", bookNow);
+    </script>
+  </body>
+</html>
